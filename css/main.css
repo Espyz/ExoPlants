@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    min-width: 320px;
 }
 
 #listok_1 {
@@ -24,7 +25,6 @@ body {
 .header {
     max-width: 1148px;
     min-height: 92px;
-    width: 100%;
     background-color: #FFF;
     border-radius: 50px;
     box-shadow: 0 4px 4px 0 #00000025;
@@ -79,6 +79,26 @@ body {
     justify-content: space-between;
 }
 
+.info-block {
+    max-width: 843px;
+    min-height: 386px;
+    width: 100%;
+    background-color: #EAEDE7;
+    box-shadow: 0 4px 4px 0 #00000025;
+    margin-top: 74px;
+    margin-left: 117px;
+    display: flex;
+    flex-direction: row;
+
+    align-self: center;
+    margin: 0 auto;
+}
+
+.vase-img {
+    margin-left: 90px;
+    margin-top: 33px;
+}
+
 .info-text p {
     margin-top: 77px;
     margin-left: 108px;
@@ -121,6 +141,21 @@ body {
     transform: scale(1.1);
 }
 
+#slaider-p {
+    text-align: center;
+    font-family: interRegular;
+    font-size: 22px;
+    margin-top: 32px;
+}
+
+.slaider {
+    display: flex;
+    align-items: center;
+    max-width: 1222px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .card-1 {
     display: flex;
     flex-direction: column;
@@ -133,17 +168,28 @@ body {
     transition: all 0.5s;
     position: relative;
 }
+
 .card-1 img {
     margin-top: 22px;
     z-index: 1;
 }
 
-.img { 
+.img {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.slider-body {
+    display: inline-grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    max-width: 1096px;
+    width: 100%;
+    min-height: 353px;
+    overflow: hidden;
 }
 
 .line-block {
@@ -203,6 +249,19 @@ body {
     background-color: #6AAD46;
 }
 
+.p-style {
+    text-align: center;
+    font-family: interRegular;
+    font-size: 22px;
+    margin-top: 75px;
+    margin-bottom: 9px;
+}
+
+.block-states {
+    margin: 0 auto;
+    margin-bottom: 71px;
+}
+
 .a-link {
     position: absolute;
     top: 225px;
@@ -224,6 +283,63 @@ body {
     text-decoration: underline;
 }
 
+.states {
+    max-width: 1261px;
+    min-height: 281px;
+    width: 100%;
+    background-color: #EAEDE7;
+    box-shadow: 0 4px 4px 0 #00000025;
+    margin-top: 9px;
+    /*margin-left: 4px;*/
+    margin-bottom: 71px;
+
+    display: flex;
+    flex-direction: row;
+    /*align-self: center;*/
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.states-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.link-states {
+    font-family: interLight;
+    font-size: 16px;
+    color: #000;
+    text-underline-offset: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.link-states:hover {
+    color: #6AAD46;
+    text-decoration: none;
+}
+
+.states-position {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0 151px;
+    justify-content: space-evenly;
+}
+
+.states-position p {
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer {
     position: relative;
     margin: 0;
@@ -231,19 +347,23 @@ body {
     min-height: 291px;
     background-color: #728567;
 }
+
 .footer-text {
     display: grid;
     max-width: 1123px;
+    width: 100%;
     grid-template-columns: repeat(4, 281px);
     margin: 0 auto;
     align-items: start;
     justify-content: space-between;
 }
+
 #listok-3 {
     position: absolute;
     bottom: 0;
     left: 0;
 }
+
 .block-f h3 {
     display: flex;
     align-items: center;
@@ -251,111 +371,102 @@ body {
     font-size: 20px;
     color: #C5C5AC;
 }
-.block-f img { 
+
+.info-text a {
+    text-decoration: none;
+}
+
+.block-f img {
     margin-right: 9px;
 }
+
 .footer h3 {
     font-family: interMedium;
     font-size: 20px;
 }
+
 .footer-text p {
     font-family: interLight;
     font-size: 16px;
     color: #C5C5AC;
 }
+
 .footer-text a {
     font-family: interLight;
     font-size: 16px;
     color: #C5C5AC;
     text-decoration: none;
 }
+
 .link-footer:hover {
-    color:#3F453C;
+    color: #3F453C;
 }
+
 #catalog-p {
     font-family: interRegular;
     font-size: 22px;
     text-align: center;
-    margin: 0;
-    margin-bottom: 32px;
+    margin-top: 32px;
 }
-.catalog {
-    width: 1200px;
+
+.catalog-body {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .catalog-part {
-    display: none;
-    justify-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(4, 257px);
-    grid-template-rows: repeat(3, 353px);
-    width: 1096px;
+    display: inline-grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    max-width: 1096px;
     width: 100%;
+    min-height: 353px;
     overflow: hidden;
-    gap: 50px 29px;
 }
 
-.catalog-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 230px;
-
-    margin-bottom: 19px;
-    margin-top: 66px;
-    font-family: interSemiBold;
-    font-size: 19px;
-}
-.catalog-nav p:hover {
-    cursor: pointer;
-}
-#strelka-left {
-    border: none;
-    width: 33px;
-    height: 33px;
-    border-radius: 100%;
-    background: no-repeat url('IMG/strelka-left-mini.svg') center, #5C6B54;
-    box-shadow: 0 4px 4px 0 #00000025;
-}
-
-#strelka-right {
-    border: none;
-    width: 33px;
-    height: 33px;
-    border-radius: 100%;
-    background: no-repeat url('IMG/strelka-right-mini.svg') center, #5C6B54;
-    box-shadow: 0 4px 4px 0 #00000025;
-}
-
-.link-goods{
+/*.catalog-part2 {
+    margin-top: 488px;
+    display: inline-grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    max-width: 1096px;
+    width: 100%; 
+    min-height: 353px;
+    overflow: hidden;
+}*/
+.link-goods {
     color: #000;
     text-decoration: none;
 }
+
 .link-goods:hover {
     color: #3F453C;
+    font-weight: 1000;
 }
+
 @font-face {
     font-family: interExtraLight;
-    src: url("Fonts/Inter-ExtraLight.otf");
+    src: url("../Fonts/Inter-ExtraLight.otf");
 }
 
 @font-face {
     font-family: interRegular;
-    src: url("Fonts/Inter-Regular.otf");
+    src: url("../Fonts/Inter-Regular.otf");
 }
 
 @font-face {
     font-family: interLight;
-    src: url("Fonts/Inter-Light.otf");
+    src: url("../Fonts/Inter-Light.otf");
 }
 
 @font-face {
     font-family: interSemiBold;
-    src: url("Fonts/Inter-SemiBold.otf");
+    src: url("../Fonts/Inter-SemiBold.otf");
 }
+
 @font-face {
     font-family: interMedium;
-    src: url("Fonts/Inter-Medium.otf");
+    src: url("../Fonts/Inter-Medium.otf");
 }
