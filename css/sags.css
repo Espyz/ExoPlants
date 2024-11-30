@@ -181,15 +181,14 @@ body {
 }
 
 .sags-part {
+    max-height: 1200px;
     display: none;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: repeat(4, 257px);
-    grid-template-rows: repeat(3, 353px);
-    width: 1096px;
+    grid-template-columns: repeat(auto-fit, 257px);
     width: 100%;
-    overflow: hidden;
-    gap: 50px 29px;
+    overflow: overlay;
+    gap: 50px 29px;/
 }
 
 .sags-nav {
