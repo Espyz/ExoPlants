@@ -44,3 +44,37 @@ if (selectedCard.photoLink) {
         prices[1].style.display = 'none'
     }
 }
+
+const arrowRight = document.getElementById('right')
+const arrowLeft = document.getElementById('left')
+const imgSelectors = Array.from(document.querySelectorAll('.img-selectors'))
+
+arrowRight.addEventListener('click', setNextPhoto)
+arrowLeft.addEventListener('click', setBeforePhoto)
+
+imgSelectors[0] = {
+    src: selectedCard.photoLink
+}
+
+let item = 0
+
+function setNextPhoto() {
+    const mainPhoto = Array.from(document.querySelectorAll('.img-main'))[0]
+    
+    if (++item > imgSelectors.length - 1) {
+        item = 0
+    }
+    console.log(item)
+    mainPhoto.src = imgSelectors[item].src
+}
+
+function setBeforePhoto() {
+    const mainPhoto = Array.from(document.querySelectorAll('.img-main'))[0]
+    
+    if (--item < 0) {
+        item = imgSelectors.length - 1
+    }
+    
+    mainPhoto.src = imgSelectors[item].src
+}
+
