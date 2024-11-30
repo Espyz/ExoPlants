@@ -304,10 +304,10 @@ input:focus {
 
 .center {
     height: 27px;
-    width: 89px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    padding-top: 25px;
     font-size: 22px;
     font-family: interRegular;
 }
