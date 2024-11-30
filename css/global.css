@@ -123,9 +123,21 @@
 
 @media (max-width: 520px) {
     .nav {
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
         grid-template-rows: repeat(2, 1fr);
     }
+
+    .nav .link:nth-child(4) {
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+        text-align: center;
+        position: relative;
+        left: 50px;
+        justify-content: center;
+    }
+
     .nav a {
         text-align: left;
         margin-left: 30px;
