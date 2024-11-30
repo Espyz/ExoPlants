@@ -252,6 +252,7 @@ input:focus {
 
     .img-main {
         height: 300px;
+        width: 80% !important;
         margin-top: 0;
     }
     .arrow {
