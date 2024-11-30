@@ -308,6 +308,8 @@ body {
 .states-img {
     max-width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .link-states {
@@ -326,12 +328,13 @@ body {
 }
 
 .states-position {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(117px, 1fr));
+    grid-template-rows: repeat(1, 112px);
+    margin-bottom: 2%;
     width: 100%;
-    margin: 0 auto;
-    gap: 0 151px;
-    justify-content: space-evenly;
+    max-width: 648px;
+    align-items: center;
 }
 
 .states-position p {
@@ -339,6 +342,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.states-img img {
+    max-width: 80%;
+    padding: 0 10%;
 }
 
 .footer {
