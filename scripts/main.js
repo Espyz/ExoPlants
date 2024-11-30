@@ -41,16 +41,24 @@ function prevElem() {
     }
 }
 function enableButtons(prev, next) {
+    let cardCount = Math.floor(window.innerWidth / 253)
+    
+    if (cardCount > 4) {
+        cardCount = 4
+    }
+    
     if (currentPage === 0) {
         prev.inert = true;
         next.inert = false;
         return;
     }
-    if (currentPage === lenSlider - 4) {
+    
+    if (currentPage === lenSlider - cardCount) {
         next.inert = true;
         prev.inert = false;
         return;
     }
+    
     prev.inert = false;
     next.inert = false;
 }
