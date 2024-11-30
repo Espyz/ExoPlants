@@ -16,7 +16,7 @@ function nextElem() {
 
         const leftRange = parseInt(getComputedStyle(card).translate);
         const widthElem = parseInt(card.offsetWidth + 20);
-        console.log(leftRange, widthElem)
+        
         if (leftRange) {
             card.style = `translate: ${leftRange - widthElem}px`;
             continue;

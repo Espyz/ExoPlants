@@ -154,6 +154,7 @@ body {
     z-index: 2;
     position: relative;
     bottom: 0;
+    cursor: pointer;
 }
 
 .price {

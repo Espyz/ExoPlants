@@ -200,6 +200,7 @@ body {
     z-index: 2;
     position: relative;
     bottom: 0;
+    cursor: pointer;
 }
 
 .price {
@@ -424,26 +425,6 @@ body {
     width: 100%;
     min-height: 353px;
     overflow: hidden;
-}
-
-/*.catalog-part2 {
-    margin-top: 488px;
-    display: inline-grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-    max-width: 1096px;
-    width: 100%; 
-    min-height: 353px;
-    overflow: hidden;
-}*/
-.link-goods {
-    color: #000;
-    text-decoration: none;
-}
-
-.link-goods:hover {
-    color: #3F453C;
-    font-weight: 1000;
 }
 
 @font-face {
