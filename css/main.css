@@ -85,32 +85,50 @@ body {
     width: 100%;
     background-color: #EAEDE7;
     box-shadow: 0 4px 4px 0 #00000025;
-    margin-top: 74px;
-    margin-left: 117px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
 
-    align-self: center;
-    margin: 0 auto;
+.positioner {
+    display: flex;
+    justify-content: center;
 }
 
 .vase-img {
     margin-left: 90px;
     margin-top: 33px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-.info-text p {
-    margin-top: 77px;
-    margin-left: 108px;
+.info-text {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    padding-top: 10px;
+}
+
+.info-1 {
+    display: flex;
+    text-align: left;
     font-family: interLight;
     font-size: 22px;
+    grid-row: 1;
+    padding-left: 5px;
 }
 
-.info-text p:nth-child(2) {
-    margin-top: 35px;
-    margin-left: 275px;
+.info-2 {
+    margin-left: 40%;
+    text-align: left;
     font-family: interLight;
     font-size: 20px;
+    grid-row: 2;
+}
+
+.info-block a {
+    text-decoration: none;
+    grid-row: 3;
 }
 
 .btn-catalog {
@@ -125,9 +143,8 @@ body {
     border-radius: 30px;
     border: 0;
     box-shadow: 0 4px 4px 0 #00000025;
-    margin-top: 44px;
-    margin-left: 157px;
-    padding-left: 33px;
+    margin-left: 27%;
+    padding-left: 10%;
     transition: all 500ms ease;
 }
 
@@ -353,10 +370,6 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
-.info-text a {
-    text-decoration: none;
 }
 
 #catalog-p {
